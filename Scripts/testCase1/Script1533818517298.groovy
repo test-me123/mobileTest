@@ -2,6 +2,10 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
+import org.openqa.selenium.WebDriver
+import org.testng.annotations.Test
+
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
@@ -22,3 +26,10 @@ import internal.GlobalVariable as GlobalVariable
 Mobile.startApplication("C:\\Users\\Sai Rahul\\Downloads\\Luvder_27042018.apk", false)
 Mobile.tap(findTestObject('Object Repository/New Folder/screen1/android.widget.Button0 - Log In'), 5000)
 Mobile.tap(findTestObject('Object Repository/New Folder/screen2/skip'), 5000)
+
+@Test
+public void alert()
+{
+WebDriver driver;
+driver.switchTo().alert().accept();
+}
