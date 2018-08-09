@@ -100,3 +100,8 @@
 [35m[HTTP][39m [90m{}[39m
 [35m[HTTP][39m [37m<-- GET /wd/hub/session/c2c619f6-2dc6-4901-b673-2f3e53f3f354/screenshot [39m[32m200[39m [90m1168 ms - 625528[39m
 [35m[HTTP][39m [90m[39m
+[35m[BaseDriver][39m Shutting down because we waited 1800 seconds for a command
+[35m[Appium][39m Closing session, cause was 'New Command Timeout of 1800 seconds expired. Try customizing the timeout using the 'newCommandTimeout' desired capability'
+[35m[Appium][39m Removing session c2c619f6-2dc6-4901-b673-2f3e53f3f354 from our master session list
+[35m[UiAutomator2][39m Did not get confirmation UiAutomator2 deleteSession worked; Error was: ProxyRequestError: Could not proxy command to remote server. Original error: Error: connect ECONNREFUSED 127.0.0.1:8200
+[35m[UiAutomator2][39m Unable to remove port forward 'Error executing adbExec. Original error: 'Command ''C:\\Users\\Sai Rahul\\.katalon\\tools\\android_sdk\\platform-tools\\adb.exe' -P 5037 -s U8VSC6NBWKMFGISS forward --remove tcp\:8200' exited with code 1'; Stderr: 'error: listener 'tcp:8200' not found'; Code: '1''
